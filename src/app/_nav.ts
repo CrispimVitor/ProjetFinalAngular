@@ -68,6 +68,11 @@ export const navItems: NavData[] = [
         icon: 'icon-puzzle'
       },
       {
+        name: 'Affaire',
+        url: '/base/affaire',
+        icon: 'icon-puzzle'
+      },
+      {
         name: 'Carousels',
         url: '/base/carousels',
         icon: 'icon-puzzle'

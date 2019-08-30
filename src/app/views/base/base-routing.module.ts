@@ -12,6 +12,7 @@ import { PaginationsComponent } from './paginations.component';
 import {PopoversComponent} from './popovers.component';
 import {ProgressComponent} from './progress.component';
 import {TooltipsComponent} from './tooltips.component';
+import { AffaireComponent } from './affaire/affaire.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,13 @@ const routes: Routes = [
         component: CardsComponent,
         data: {
           title: 'Cards'
+        }
+      },
+      {
+        path: 'affaire',
+        component: AffaireComponent,
+        data: {
+          title: 'Affaire'
         }
       },
       {
