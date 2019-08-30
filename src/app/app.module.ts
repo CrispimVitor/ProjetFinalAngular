@@ -40,6 +40,13 @@ import { AppRoutingModule } from './app.routing';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ChartsModule } from 'ng2-charts';
+import { AffaireService } from './services/affaire.service';
+import { DocumentService } from './services/document.service';
+import { PhaseService } from './services/phase.service';
+import { RoleService } from './services/role.service';
+import { TacheService } from './services/tache.service';
+import { TribunalService } from './services/tribunal.service';
+import { UtilisateurService } from './services/utilisateur.service';
 
 @NgModule({
   imports: [
@@ -66,8 +73,15 @@ import { ChartsModule } from 'ng2-charts';
   ],
   providers: [{
     provide: LocationStrategy,
-    useClass: HashLocationStrategy
-  }],
+    useClass: HashLocationStrategy,
+  },
+  AffaireService,
+  DocumentService,
+  PhaseService,
+  RoleService,
+  TacheService,
+  TribunalService,
+  UtilisateurService],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
